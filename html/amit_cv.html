@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bonsai Paradise | Amit Ray CV</title>
+      <link rel="stylesheet" href="../css/style.css">
+   </head>
+   <!-----internal CSS for the entire resume--------->
+   <style>
+     *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "poppins", sans-serif;
+}
+body
+{
+background: lightblue;
+
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container{
+position:relative;
+width: 100%;
+max-width: 1000px;
+min-height: 1000px;
+margin-left: 25%;
+margin-top: 75px;
+background: #fff;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side{
+position: relative;
+background: #003147;
+padding: 40px;
+}
+.profiletext{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profiletext .imgbox{
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+.profiletext .imgbox img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.profiletext h2{
+color: #fff;
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 600;
+line-height: 1.4em;
+}
+.profiletext h2 span{
+font-size: 0.8em;
+font-weight: 300;
+}
+.contactinfo{
+padding-top: 40px;
+}
+.title{
+color: #fff;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.contactinfo ul{
+position: relative;
+}
+.contactinfo ul li{
+position: relative;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+}
+.contactinfo ul li span{
+color: lightgrey;
+}
+.contactinfo ul li span:hover{
+color: #03a9f4;
+}
+.contactinfo.education li{
+margin-bottom: 15px;
+}
+.contactinfo.education h5{
+color: #03a9f4;
+font-weight: 500;
+}
+.contactinfo.education h4{
+color: grey;
+font-weight: 500;
+}
+.contactinfo.language .percent{
+position: relative;
+width: 100%;
+height: 6px;
+background: black;
+display: block;
+margin-top: 5px;
+}
+.contactinfo.language .percent div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+}
+.container .right_side{
+position: relative;
+background: #fff;
+padding: 40px;
+}
+.about{
+margin-bottom: 50px;
+}
+.title2{
+color: #003147;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 10px;
+}
+.container p{
+color: #333;
+}
+.about .box{
+display: flex;
+flex-direction: row;
+margin: 20px 0; 
+}
+.about .box .text h4{
+text-transform: uppercase;
+color: #2a7da2;
+font-size: 16px;
+}
+.skills .box{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+.skills .box h4{
+text-transform: uppercase;
+color: #848c99;
+font-weight: 500;
+}
+.skills .box .percent{
+position: relative;
+width: 100%;
+height: 10px;
+background: #f0f0f0;
+}
+.skills .box .percent div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: grey;
+}
+.interest ul{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+}
+.interest ul li{
+list-style: none;
+color: #333;
+font-weight: 500;
+margin: 10px 0;
+}
+   </style>
+   <body>
+      <!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+    <!-----a left side container to add info about me----->
+      <div class="container">
+         <div class="left_side">
+            <div class="profiletext">
+               <div class="imgbox">
+                  <img src="../images/Product-images/adam.jpg">
+               </div>
+               <h2>Amit Ray<br><span>Student</span></h2>
+            </div>
+            <!-----creating a class to show contact info---->
+            <div class="contactinfo">
+               <h3 class="title">contact Info</h3>
+               <ul>
+                  <li>
+                     <span class="text">+977 9854354563</span>
+                  </li>
+                  <li>
+                     <span class="text">anonymous@gmail.com</span>
+                  </li>
+                  <li>
+                     <span class="text">www.anonymous.com</span>
+                  </li>
+                  <li>
+                     <span class="text">www.linkedin.com/Amit</span>
+                  </li>
+                  <li>
+                     <span class="text">kirtipur, Kathmandu, Nepal</span>
+                  </li>
+               </ul>
+            </div>
+            <!----info about the education gained and will again---->
+            <div class="contactinfo education">
+               <h3 class="title">Education</h3>
+               <ul>
+                  <li>
+                     <h5>2022 - present</h5>
+                     <h4>Bsc(hons.) Networking & IT Security</h4>
+                     <h4>Islington College</h4>
+                  </li>
+                  <li>
+                     <h5>2019 - 2021</h5>
+                     <h4>+2 Science</h4>
+                     <h4>Triton international college</h4>
+                  </li>
+                  <li>
+                     <h5>2013 - 2019</h5>
+                     <h4>Grade 5 - 10</h4>
+                     <h4>Monastic HSEB School</h4>
+                  </li>
+                  <li>
+                     <h5>2006 - 2013</h5>
+                     <h4>Nursery - Grade 4</h4>
+                     <h4>Sunrise eng. boarding School </h4>
+                  </li>
+               </ul>
+            </div>
+            <!-------creating language section and showing sorts of languages i can speak and understand----->
+            <div class="contactinfo language">
+               <h3 class="title">Languages</h3>
+               <ul>
+                  <li>
+                     <span class="text">English</span>
+                     <span class="percent">
+                        <div style="width: 85%;"></div>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="text">Nepali</span>
+                     <span class="percent">
+                        <div style="width: 90%;"></div>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="text">Maithali</span>
+                     <span class="percent">
+                        <div style="width: 95%;"></div>
+                     </span>
+                  </li>
+                  <li>
+                     <span class="text">Hindi</span>
+                     <span class="percent">
+                        <div style="width: 90%;"></div>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!------a right side container to let know more by providing description and skills that is known------>
+         <div class="right_side">
+            <div class="about">
+               <h2 clacc="title2">Profile</h2>
+               <p>Highly motivated and process-driven individual with team management and leadership. Proven ability to successfully oversee projects from concept to completion, while effectively communicating and collaborating with cross-functional teams.<br><br> Holds an intermediate level of education in science and going further.<br> Apart, currently studying at Islington College where i'm upto my degree in Networking and IT Security. Thank you </p>
+            </div>
+            <div class="about skills">
+               <h2 clacc="title2">Professional Skills</h2>
+               <div class="box">
+                  <h4>Html</h4>
+                  <div class="percent">
+                     <div style="width: 40%;"></div>
+                  </div>
+               </div>
+               <div class="box">
+                  <h4>CSS</h4>
+                  <div class="percent">
+                     <div style="width: 40%;"></div>
+                  </div>
+               </div>
+               <div class="box">
+                  <h4>Javascript</h4>
+                  <div class="percent">
+                     <div style="width: 30%;"></div>
+                  </div>
+               </div>
+            </div>
+            <!-----secction to show things i'm interested to------->
+            <div class="about interest">
+               <h2 class="title2">Interest</h2>
+               <ul>
+                  <li>Gaming</li>
+                  <li>Reading</li>
+                  <li>Cycling</li>
+                  <li>Cooking</li>
+                  <li>Hiking</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      		<!--footer begins-->
+		<footer class="footer" style="margin-top: 10px;">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Bonsai Paradise</h4>
+						<p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+						<br>
+						<h4>follow us</h4>
+						<!--links to social media-->
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+							<li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+							<li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+							<li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+							<li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+							<li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<ul>
+							<li><a href="#">Bonsai trees</a></li>
+							<li><a href="#">Bonsai tools & accessories</a></li>
+							<li><a href="#">Bonsai pots & trays</a></li>
+							<li><a href="#">Feeds, Fertilizers & Soil</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Informations</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Bonsai tree cares</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<!--description-->
+						<ul>
+							<li><a href="#">shop@bonsaiparadise.np</a></li>
+							<li><a href="#">98453678</a></li>
+							<br>
+							<p>Bonsai Paradise,</p>
+							<p>Kirtipur</p>
+							<p>Kathmandu</p>
+							<p>Nepal</p>
+							<br>
+							<li><a href="#">Sell us your Bonsai</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+				<br>
+				<p class="copyright">copyright 2023 - Bonsai Paradise</p>
+			</div>
+		</footer>
+		<!--footer ends-->
+   </body>
+</html>

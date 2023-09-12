@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Bonsai Paradise | Homepage</title>
+   </head>
+   <style>
+      html    /*css for entire page */
+      {
+      height: 100%;
+      overflow-x: hidden;
+      }
+      body    
+      {
+      /* this code will set the height to 100% with no margin and padding to avoid errors in upcomming design */
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      font-family: 'Hind', sans-serif;
+      background-image: linear-gradient(to right,#dad299bd,rgba(207, 255, 217, 0.615));
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+      }
+      /*CSS to show the users are in home page*/
+      #home{
+      background-color: #106a52;
+      color:white;
+      border-radius: 5px;
+      }
+      .text-bg
+      {
+      /* 
+      this styling is for the background of the THE ART OF BONSAI text
+      */
+      background-image: url(../images/img/1090729.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 26% 26% 26% 26% / 0% 0% 51% 0%;        
+      background-position: center;
+      /* border-radius: 5px; */
+      color: white;
+      display: block;
+      font-size: 44px;
+      font-weight: bold;
+      padding: 230px;    
+      }
+      .text-bg-main{
+      display: flex;
+      width: 500px;
+      }
+      .Desc{
+      font-size: 19px;
+      width: 600px;
+      }
+      .product-page-link{ 
+      border-radius: 5px;
+      border: 2px solid rgb(0, 0, 0);
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-size: 1.125rem;
+      font-weight: 700;
+      width: 140px;
+      line-height: 1;
+      background-color: aliceblue;
+      padding: 14px;
+      margin: -3px;
+      }
+      .product-page-link:hover{
+      box-shadow: 33px 1px 31px 1px rgba(0, 1, 0, 0.34);
+      }
+      .product-button{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      }
+      .span2{
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.45);
+      border-radius: 17px;
+      display: flex;
+      backdrop-filter: blur(41px);
+      border: 1px solid rgb(201, 179, 172);
+      width: fit-content;
+      padding: 183px;
+      margin: 111px;
+      box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34);
+      }
+      .span2 img{
+      border-radius: 50%;
+      }
+      .boxes{
+      display: flex;
+      justify-content: space-around;
+      /* background-image: url(img/container_path.png); */
+      padding: 52px;
+      margin: 7px;
+      border-radius: 5px;
+      background-image: linear-gradient(to right,#dad299bd,rgba(207, 255, 217, 0.615));
+    	background-repeat: no-repeat;
+	    background-size: cover;
+      background-size: cover;
+      }
+      .span1{
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.45);
+      border-radius: 17px;
+      border: 1px solid rgb(201, 179, 172);
+      width: 34%;
+      margin: 29px;
+      box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34);
+      }
+      .center{
+      text-align: center;
+      text-decoration: underline;
+      padding: 22px;
+      margin: 31px;
+      text-transform: uppercase;
+      }
+      .footcontain{
+      color:rgb(201, 179, 172,40);
+      padding-top: 40px;
+      background-color: #f5f5f5;  
+      border: 2px solid rgb(201, 179, 172,7);
+      border-radius: 5px;
+      }
+      .innercontain{
+      padding-top: 24px;
+      padding-bottom:40px;
+      position: relative;
+      }
+      .footer-icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 50px;
+      margin: 22px;
+      list-style-type: none;
+      }
+      .last-footer{
+      display: flex;
+      justify-content: space-evenly;
+      }
+      .last-footer-text{
+      width:200px;
+      text-transform: uppercase;
+      }
+      .inner-menu{
+      /* Sets the background image to a file named bonsainmid.png.
+      Scales the background image to cover the full element.
+      Centers the background image.
+      Centers the text within the element.
+      Sets the font size to medium.
+      Transforms the text to uppercase letters.
+      Adds 300 pixels of padding to the element.
+      Adds a margin of 10 pixels to the element. */
+      background-image: url(../images/img/bonsainmid.png);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      font-size: medium;
+      text-transform: uppercase;
+      padding: 300px;
+      margin: 10px;
+      }
+      .innermail{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      }
+      .innermail-text{
+      font: 0.98em sans-serif;
+      }
+      .innermail-text-email{
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid #bc8f8f;
+      border-radius: 8px;
+      }
+      .submit{
+      width:150px;   
+      }
+      .button{
+      /* css for the button */
+      display: inline-block;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+      font-size: 25px;
+      padding: 10px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      }
+      .button:hover{
+      /* css effect while hovering the button */
+      color: black;
+      background-color: white;
+      }
+      .reviews{
+      display: flex;
+      justify-content: space-around;
+      margin: 93px;
+      height: 197px;
+      height: 100px;
+      }
+      .container-reviews img{
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+      }
+      .photo-left{
+      /* to set the image in right place in the testomonials section */
+      display: flex;
+      padding: 12px;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-radius: 13px;
+      }
+      .container-reviews span{
+      font-weight: bold;
+      }
+      .container-reviews{
+      /* to style the reviews container */
+      border-radius: 17px;
+      border: 1px solid rgb(201, 179, 172);
+      padding: 12px;
+      margin: 12px;
+      width: 25%;
+      box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34);
+      }
+      .container-testomonials-1{
+      border-radius: 17px;
+      border: 1px solid rgb(201, 179, 172);
+      padding: 12px;
+      margin: 12px;
+      width: 15%;
+      box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34);
+      }
+      .span2-inside {
+      /* this section is for the styling of the container of recent products */
+      padding: 27px;
+      background: rgba(255, 255, 255, 0.45);
+      border-radius: 17px;
+      display: flex;
+      /* border: 1px solid rgb(201, 179, 172); */
+      width: fit-content;
+      height: 870px;
+      padding: 0px;
+      margin: 0px;
+      /* box-shadow: -1px 13px 81px -15px rgb(0 0 0 / 34%); */
+      }
+      .clock{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      letter-spacing: 6px;
+      }
+      #clock {
+      float: right;
+      letter-spacing: 4px;
+      color: white;
+      font-size: large;
+      padding: 15px;
+      }
+   </style>
+   <body>
+      <!--NAVIGATION BAR BEGINS-->
+      <nav>
+         <div class="navbar">
+            <!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+            <a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+            <!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+            <div class="navtext">
+               <a href="home.html" id="home">Home</a>
+               <a href="blog.html" id="blog">Blog</a>
+               <a href="aboutus.html" id="aboutus">About Us</a>
+               <a href="product.html" id="products">Products</a>
+               <a href="research.html" id="research">Research</a>
+               <a href="contactus.html" id="contactus">Contact Us</a>
+            </div>
+            <div class="formsearch">
+               <form name="search">
+                  <input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+               </form>
+               <a>
+                  <img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+                  <div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+               </a>
+               <a>
+                  <img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+                  <div style="margin-left: 25px;">login/signup</div>
+               </a>
+            </div>
+         </div>
+      </nav>
+      <!--NAVIGATION BAR ENDS-->
+      <div id="clock"></div>
+      <script>
+         function updateClock() {
+         var date = new Date();
+         var time = date.toLocaleTimeString();
+          document.getElementById("clock").innerHTML = time;
+         }
+         setInterval(updateClock, 1000);
+      </script>
+      <div class="text-bg">
+         <h1 class="text-bg-main">THE ART OF BONSAI</h1>
+         <p class = "Desc">Bonsai trees are grown for their aesthetic value and as a way to relax and meditate. They are often seen as living sculptures, and the art of bonsai is considered to be a combination of horticulture, aesthetics, and meditation.
+         </p>
+         <div>
+            <div class="product-page-link">
+               <a href="product.html" class="product-button">Products Here!</a>
+            </div>
+         </div>
+      </div>
+      <style>
+         .texts{
+         font-size: 44px;
+         text-decoration: none;
+         }
+         .prodd{
+         /* this is for the products container */
+         height: 100px;
+         position:absolute;
+         top: 20px;
+         left: 20px;
+         right: 20px;
+         text-align: center;
+         }
+         .photo-left img{
+         border-radius: 50%;
+         }
+         .photo-left p{
+         width: fit-content;
+         }
+         .recent-products {
+         padding: 0px;
+         border-radius: 10px;   
+         }
+         .recent-products h2 {
+         text-align: center;
+         font-size: 1.5em;
+         margin-bottom: 20px;
+         padding: 0px;
+         }
+         .recent-products ul {
+         list-style-type: none;
+         margin: 0;
+         display: flex;
+         padding: 0;
+         }
+         .recent-products-contain{
+         display: flex;
+         }
+         span{
+         padding: 30px;
+         }
+      </style>
+      <!-- this popular div is for the creation of the popular items  -->
+      <div class="popular">
+      <h3 style="font-size: 34px;" class="center texts">Most Popular</h3>
+      <div class="span2-inside">
+         <div class="recent-products title">
+            <div class="recent-products-contain">
+               <style>
+                  .product {
+                  /* styling of the product container */
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 100px;
+                  }
+                  .product img {
+                  width: 252px;
+                  height: 340px;
+                  cursor: pointer;
+                  border-radius: 15px;
+                  }
+                  .product img:hover{
+                  transform: translateY(-5px);
+                  box-shadow: -1px 3px 31px 4px rgba(37, 73, 45, 0.72);
+                  /* ranslateY(-5px)" moves an element vertically upward by 5 pixels along the Y-axis. */
+                  }
+                  .product h3 {
+                  margin: 8px 0;
+                  font-size: 18px;
+                  }
+                  .product p {
+                  margin: 8px 0;
+                  font-size: 14px;
+                  color: gray;
+                  }
+                  .discount{
+                  text-decoration: line-through;
+                  /* this is used to cut text in half  */
+                  }
+                  .product .rating i{
+                  font-size: 12px;
+                  color: darkgreen;
+                  }
+                  .product button {
+                  padding: 8px 16px;
+                  font-size: 14px;
+                  background-color: lightgray;
+                  border: none;
+                  border-radius: 8px;
+                  cursor: pointer;
+                  }
+                  .product button:hover {
+                  background-color: darkolivegreen;
+                  color: white;
+                  }
+                  .product-table {
+                  margin-bottom: 20px;
+                  margin-top: 40px;
+                  padding: 21px;
+                  }
+                  .product {
+                  width: calc(33.33% - 32px);
+                  margin: 12px;
+                  }
+                  .product img{
+                  box-shadow: -1px 3px 31px 4px rgba(73, 41, 37, 0.72);
+                  }
+                  .title {
+                  text-align: center;
+                  margin: 0 auto 20px;
+                  position: relative;
+                  color: darkolivegreen;
+                  }
+                  .border-products{
+                  border-radius: 12px;
+                  width: fit-content;
+                  }
+               </style>
+               <div class="border-products" style="border: 1px solid rgb(201, 179, 172);background-image: linear-gradient(to right,#dad299bd,rgba(207, 255, 217, 0.615));background-repeat: no-repeat;background-size: cover;">
+                  <table style="margin-left:130px">
+                     <tr>
+                        <td>
+                           <div class="product">
+                              <img src="../images/img/product1.png" alt="artistic bonsai">
+                              <h3>Ginseng</h3>
+                              <div class="rating">
+                                 <p class="discount">Rs.790</p>
+                                 <p>Rs.700</p>
+                                 <button>Add to Cart</button>
+                              </div>
+                        </td>
+                        <td>
+                        <div class="product">
+                        <!-- first product -->
+                        <img src="../images/img/bonsai-plant1.jpg" alt="artistic bonsai">
+                        <h3>Juniper Juniperus</h3>
+                        <p class="discount">Rs.810</p>
+                        <p>Rs.800</p>
+                        <button>Add to Cart</button>
+                        </div>
+                        </td>
+                        <td>
+                        <!-- second product -->
+                        <div class="product">
+                        <img src="../images/img/product2.png" alt="Megumi Red maple">
+                        <h3>Megumi Red maple</h3>
+                        <p class="discount">Rs.800</p>
+                        <p>Rs.780</p>
+                        <button>Add to Cart</button>
+                        </div>
+                        </td>
+                     </tr>
+                  </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <style>
+         .blog-post {
+         /* this style is for the blog post */
+         width: 80%;
+         padding: 69px;
+         margin: 97px;
+         border: 1px solid rgb(201, 179, 172);
+         border-radius: 7px;
+         background: rgba(216, 157, 157, 0.45);
+         box-shadow: -1px 13px 81px -15px rgb(0 0 0 / 34%);
+         }
+         .blog-post h2 {
+         font-size: 24px;
+         font-weight: bold;
+         padding: 24px;
+         margin: 11px;
+         margin-bottom: 10px;
+         text-transform: uppercase;
+         }
+         .blog-post p {
+         font-size: 18px;
+         line-height: 1.5;
+         padding: 24px;
+         margin: 28px;
+         color: #333;
+         }
+         .read-more-btn {
+         position: absolute;
+         right: 130px;
+         padding: 13px 45px;
+         background-color: #4CAF50;
+         color: #fff;
+         border: none;
+         border-radius: 4px;
+         font-size: 16px;
+         text-transform: uppercase;
+         cursor: pointer;
+         }
+         .read-more-btn:hover {
+         background-color: #3e8e41;
+         }
+      </style>
+      <div class="blog-post" style="background-image:linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(107, 117, 19, 0.73)),url('../images/img/bonsai.jpg');">
+         <a href="" style="color: black; text-decoration: none; text-align: center;">
+            <h2 style="letter-spacing: 1.9;">Recent Blogs</h2>
+         </a>
+         <p style="letter-spacing: 1.2px;">
+            Bonsai is a Japanese art form that helps people grow small trees in small containers.People enjoy bonsai for its beauty and the satisfaction it provides of watching a miniature tree grow.
+            One type of bonsai is called the Japanese maple. It has leaves that are delicate and come in many different colors. It is easy to shape and can be trained to grow in a variety of ways.
+            Bonsai plants are special plants that are grown in small containers. They are often grown by beginner gardeners, because they are hardy and can survive in a variety of conditions.
+            Some people like the Chinese Elm because it has delicate leaves and a thick trunk. It's also easy to shape and maintain.
+            Some people like to keep pine trees as bonsai plants. They have a very distinctive, elegant shape, and can grow in a variety of places. With care and training, a bonsai tree can grow into many different shapes.
+         </p>
+         <button class="read-more-btn" onclick="window.location.href='blog.html';">Read More</button>
+      </div>
+      <div class="boxes">
+         <div class="span1" style="background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);">
+            <h3 style="text-decoration: none;" class = "center">Techniques</h3>
+            <p>Bonsai uses cultivation techniques like pruning, root reduction, potting, defoliation, and grafting </p>
+         </div>
+         <div class="span1" style="background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);">
+            <h3  style="text-decoration: none;" class="center">Experience</h3>
+            <p>We have hands on Experience on making such delicate art piece with the help of thausands of likeminded japanese workers</p>
+         </div>
+         <div class="span1" style="background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);">
+            <h3 style="text-decoration: none;" class="center">Species</h3>
+            <p>We cultivate 16 types of different bonsai plant including Juniper,Ficus,Japanese red maple,Chinese elm</p>
+         </div>
+      </div>
+      <style>
+         /* we have used id to reference the about us section */
+         #about-us {
+         padding: 50px;
+         text-align: center;
+         }
+         #about-us h2 {
+         font-size: 36px;
+         margin-bottom: 20px;
+         color: #fff;
+         }
+         #about-us p {
+         font-size: 18px;
+         line-height: 1.5;
+         margin-bottom: 20px;
+         color: #fff;
+         }
+      </style>
+      <div class="span2"style="background-image: url(../images/img/background2.png);background-size: cover;background-position: center;">
+         <!-- this section is for the about us section we have used inline css for precise styles -->
+         <section id="about-us">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to providing top-quality products and services to our customers. With years of experience in the industry, we have a proven track record of excellence and customer satisfaction.</p>
+            <p>Our team of experts works hard to ensure that every aspect of our business, from product development to customer service, meets the highest standards of quality and reliability.</p>
+            <p>At our core, we are driven by a commitment to excellence and a desire to help our customers succeed. Contact us today to learn more about how we can help you.</p>
+         </section>
+      </div>
+      <div class="box-popular" style="height: 500px;">
+         <div class="span2-inside">
+            <!-- this container hosts the reviews of our products -->
+            <div class="Products-section" style="font-size: 30px; padding: 12px;margin: 13px;">
+               <center>
+                  <h3 style="margin-left:42%;margin-bottom:50px;position:absolute;">TESTIMONIAL</h3>
+               </center>
+            </div>
+            <div class="reviews">
+               <!-- first review -->
+               <div class="container-testomonials-1">
+                  <div class="photo-left">
+                     <img src="../images/img/photo1.jpg" alt="Avatar" style="width:90px">
+                     <p><span>Christina Helio</span></p>
+                     <p>The products here are authentic</p>
+                  </div>
+               </div>
+               <!-- second review -->
+               <div class="container-testomonials-1">
+                  <div class="photo-left">
+                     <img src="../images/img/photo2.jpg" alt="Avatar" style="width:90px">
+                     <p><span>Rebec stued.</span></p>
+                     <p>I like the shop's authenticity</p>
+                  </div>
+               </div>
+               <!-- third review -->
+               <div class="container-testomonials-1">
+                  <div class="photo-left">
+                     <img src="../images/img/photo3.jpg" alt="Avatar" style="width:90px">
+                     <p><span>Mr Frog.</span></p>
+                     <p>Beautiful art piece</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--footer begins-->
+      <footer class="footer">
+         <div class="footer-container">
+            <div class="footer-row">
+               <div class="footer-col">
+                  <h4>Bonsai Paradise</h4>
+                  <p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+                  <br>
+                  <h4>follow us</h4>
+                  <!--links to social media-->
+                  <ul class="social-links">
+                     <li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+                     <li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+                     <li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+                     <li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+                     <li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+                     <li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>Shop</h4>
+                  <ul>
+                     <li><a href="#">Bonsai trees</a></li>
+                     <li><a href="#">Bonsai tools & accessories</a></li>
+                     <li><a href="#">Bonsai pots & trays</a></li>
+                     <li><a href="#">Feeds, Fertilizers & Soil</a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>Informations</h4>
+                  <ul>
+                     <li><a href="#">My Account</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Bonsai tree cares</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>Contact Us</h4>
+                  <!--description-->
+                  <ul>
+                     <li><a href="#">shop@bonsaiparadise.np</a></li>
+                     <li><a href="#">98453678</a></li>
+                     <br>
+                     <p>Bonsai Paradise,</p>
+                     <p>Kirtipur</p>
+                     <p>Kathmandu</p>
+                     <p>Nepal</p>
+                     <br>
+                     <li><a href="#">Sell us your Bonsai</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div>
+            <hr>
+            <br>
+            <p class="copyright">copyright 2023 - Bonsai Paradise</p>
+         </div>
+      </footer>
+   </body>
+</html>

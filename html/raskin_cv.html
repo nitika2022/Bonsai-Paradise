@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bonsai Paradise | Raskin Ghimire CV</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<!--Linking external style sheet-->
+		<meta name="description" content="CV of Raskin Ghimire page of Bonsai Paradise.">
+		<meta name="keywords" content="CV,portfolio,raskin,ghimire,bonsai,products,developer,Raskin Ghimire,skill,details,eduction,projects">
+		<!--START OF INTERNAL CSS USED IN RASKIN_CV-->
+		<style>
+			/*CSS for the entire body of this page*/
+			body{
+			background-image: linear-gradient(to right,#928e6fc6,rgba(86, 108, 91, 0.704)),url(../images/background/raskincvbg.jpg);;
+			/*background-image: url(../images/background/raskincvbg.jpg);*/
+			background-repeat: no-repeat;
+			background-size: cover;
+			color:black;
+			font-family:Arial, Helvetica, sans-serif;
+			margin: 0px;
+			}
+			/*CSS of the header where name and image is displayed*/
+			.header{
+			height:210px;
+			background-color: #aebfaba0;
+			box-shadow:0px 4px 20px 3px rgba(0, 0, 0, 0.519);
+			border-bottom-right-radius: 100px;
+			border-top-right-radius:100px;
+			width: 100%;
+			}
+			/*CSS for the profile image in the header*/
+			.header_img{
+			height: 100%;
+			float: left;
+			margin-right:20px;
+			/*CSS for the h1 tag in the header class*/  
+			}
+			.header h1{
+			padding-top:100px;
+			margin-bottom:0px;
+			}
+			.header_img img{
+			width:200px;
+			height:98%;
+			border-radius: 40px;
+			margin-left:40px;
+			border-style: solid;
+			}
+			.main{
+			display: flex;
+			}
+			/*CSS of the div container that is in the left side of the body*/
+			.main_left{
+			width:62%;
+			float:left;
+			}
+			/*CSS for the profile, education and projects ids*/
+			#profile,#education,#projects{
+			border-radius: 10px;
+			padding:25px;
+			width:95%;
+			margin-top: 25px;
+			background-color: rgba(207, 243, 190, 0.667);
+			}
+			/*CSS for the table that is in the education container*/
+			table{
+			text-align: center;
+			border-collapse: collapse;
+			box-shadow: 0px 0px 20px 9px rgba(34, 39, 38, 0.353);
+			}
+			table th{
+			background-color: #93cfd4;
+			}
+			table td{
+			padding:10px;
+			background-color: #24f0f088;
+			}
+			/*CSS of the div container that is in the right side of the body*/
+			.main_right{
+			width:32%;
+			float:right;
+			background-color: rgba(227, 244, 211, 0.797);
+			margin-top: 25px;
+			margin-left: 40px;
+			border-radius:10px
+			}
+			/*CSS of the details, skills and languages ids*/
+			#details,#skills,#languages{
+			padding:25px;
+			margin-top: 25px;
+			}
+			/*CSS for the horizontal lines*/
+			hr{
+			border-color: rgb(165, 165, 165);
+			}
+		</style>
+	</head>
+	<!--Body begins here-->
+	<body>
+		<!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+		<!--Dividing the entire body into two halves, and the width of the left half is 63%-->
+		<div class="main">
+			<div class="main_left">
+				<!--header begins--> 
+				<div class="header">
+					<div class="header_img">
+						<img src="../images/team/raskin.jpg">
+					</div>
+					<h1>Raskin Ghimire</h1>
+					<p>Student</p>
+				</div>
+				<!--end of header-->
+				<!--profile container which contains short introduction-->
+				<ul style="list-style: none;">
+					<!--using inline css in this ul tage to make the style to none-->
+					<li>
+						<div id="profile">
+							<h2>Profile</h2>
+							<p>Candidate who is organised and dependable,
+								capable of managing many priorities while maintaining a pleasant attitude.
+								Willingness to take on additional duties in order to attain team goals.
+							</p>
+						</div>
+					</li>
+					<!--end of profile-->
+					<!--eductaion container which displays information in a table-->
+					<li>
+						<div id="education">
+							<h2>Education</h2>
+							<table>
+								<tr>
+									<th>Institute</th>
+									<th>Degree</th>
+									<th>Start Date</th>
+									<th>End Date</th>
+								</tr>
+								<tr>
+									<td>GEMS SCHOOL , Dhapakhel,Lalitpur</td>
+									<td>S.E.E.(CGPA 3.85)</td>
+									<td>Apr, 2008</td>
+									<td>Apr, 2019</td>
+								</tr>
+								<tr>
+									<td>Uniglobe SS College, Kamaladi, Kathmandu</td>
+									<td>+2 (CGPA 3.815)</td>
+									<td>May, 2019</td>
+									<td>Oct, 2021</td>
+								</tr>
+								<tr>
+									<td>Islington CollegeKamal Pokhari,Kathmandu</td>
+									<td>BSC (HONS) COMPUTER NETWORKING & IT SECURITY</td>
+									<td>Aug,2022</td>
+									<td>Present</td>
+								</tr>
+							</table>
+						</div>
+					</li>
+					<!--end of education-->
+					<!--projects: which contains the projects done-->
+					<li>
+						<div id="projects">
+							<h2>Projects</h2>
+							<ol type="1">
+							<h3>
+					<li>Built Website(Dec,2019)</h3>
+					<p>Built interactive website for a project using HTML, CSS, JavaScript.</p>
+					</li>
+					<h3><li>Built Accident Avoiding Robot(Mar,2022)</h3>
+					<p>Built accident avoiding robot using Arduino during a workshop organised by KURC.</p>
+					</div>
+					</li>
+					<!--end of projects-->
+				</ul>
+			</div>
+			<!--end of the main_left div-->
+			<!--start of main_right whose width is 35% and floats to right of the body-->
+			<div class="main_right">
+				<!--the details section-->
+				<div id="details">
+					<h2>Details</h2>
+					<p>raskinghimire98@gmail.com</p>
+					<p>+977 9861606647</p>
+					<p>Kalanki, Kathmandu </p>
+				</div>
+				<hr>
+				<!--skills section-->
+				<div id="skills">
+					<h2>Skills</h2>
+					<ul>
+						<li>
+							<h4>Programming</h4>
+							<p>Programming languages : QBASIC, C ,C++, Java, Python, MySQL, JavaScript</p>
+						</li>
+						<li>
+							<h3>Operating System</h3>
+							<p>Windows, Linux</p>
+						</li>
+						<li>
+							<h4>Communication Skills</h4>
+						</li>
+						<li>
+							<h4>Problem Solving</h4>
+						</li>
+						<li>
+							<h4>Team Management</h4>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<!--languages section-->
+				<div id="languages">
+					<h2>Languages</h2>
+					<p>Proficient in : Nepali, English, Hindi</p>
+				</div>
+			</div>
+		</div>
+		<!--footer begins-->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Bonsai Paradise</h4>
+						<p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+						<br>
+						<h4>follow us</h4>
+						<!--links to social media-->
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+							<li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+							<li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+							<li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+							<li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+							<li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<ul>
+							<li><a href="#">Bonsai trees</a></li>
+							<li><a href="#">Bonsai tools & accessories</a></li>
+							<li><a href="#">Bonsai pots & trays</a></li>
+							<li><a href="#">Feeds, Fertilizers & Soil</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Informations</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Bonsai tree cares</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<!--description-->
+						<ul>
+							<li><a href="#">shop@bonsaiparadise.np</a></li>
+							<li><a href="#">98453678</a></li>
+							<br>
+							<p>Bonsai Paradise,</p>
+							<p>Kirtipur</p>
+							<p>Kathmandu</p>
+							<p>Nepal</p>
+							<br>
+							<li><a href="#">Sell us your Bonsai</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+				<br>
+				<p class="copyright">copyright 2023 - Bonsai Paradise</p>
+			</div>
+		</footer>
+		<!--footer ends-->
+	</body>
+</html>

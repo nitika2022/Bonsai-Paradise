@@ -1,0 +1,127 @@
+/*CSS FOR BODY*/
+body {
+    font-family: Arial, sans-serif;
+    color: #333; 
+    }
+
+/*CSS FOR NAVIGATION BAR BEGINS*/
+.navbar a{
+    float: left;
+    color: #106a52;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 22px;
+    padding-left:22px;  
+    padding-top:22px;
+    padding-bottom:22px;
+    margin-left:1px;
+    border:none;
+
+}
+.navbar{
+    background-image:linear-gradient(to right,rgb(166, 252, 195),rgb(224, 247, 181));
+    box-shadow: 1px 10px 15px 5px rgba(0, 0, 0, 0.568);
+    height: 130px;
+    width: 100%;
+    position: relative;
+
+
+}
+.navtext {
+    padding-top:35px;
+}
+.navtext a:hover{
+    background-color: #09d55e55;
+    color:#333;
+    border-radius: 5px;
+    
+}
+.formsearch{
+    float: right;
+    display: flex;
+}
+.formsearch a{
+    font-style:italic;
+    cursor: pointer;
+    line-height: 10px;
+    padding: 0px;
+    font-size: x-small;
+}
+.navbar input[type=search]{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 15px;
+    margin-left: 5px;
+    border: solid;
+    border-width: 1px;
+    background-color: rgb(231, 248, 217);
+}
+
+/*CSS FOR NAVIGATION BAR ENDS*/
+
+
+/*CSS for Footer*/
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-row {
+    display: flex;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-image:linear-gradient(to right,rgb(69, 107, 82),rgb(95, 107, 73));
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .footer-col {
+     width: 25%;
+     padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col li a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+  }
+  
+  .footer-col li a:hover{
+    color:rgb(55, 54, 54);
+  }
+  
+  .social-links li{
+    display: inline-flex;
+  }
+  
+  .social-links li a{
+     margin-top: 0;
+     margin: 5px;
+     margin-bottom: 10px;
+  }
+  
+  .social-links li a img{
+    height: 18px;
+    width: 18px;
+  }
+  
+  .social-links li a:hover{
+    transform: translateY(-5px);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+/*footer ends*/

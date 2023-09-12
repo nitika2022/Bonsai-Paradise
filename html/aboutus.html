@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bonsai Paradise | About Us</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<!--linking external css style sheet-->
+		<meta name="description" content="About us page for Bonsai Paradise.">
+		<meta name="keywords" content="Aboutus,our team,2022,bonsai,products,developers,Raskin Ghimire,Nitika Rai,Ryan Chalise,Amit Roy,CV">
+		<!--START OF INTERNAL CSS USED IN ABOUT US PAGE-->
+		<style>
+			/*CSS for the entire body of the about us page*/
+			body{
+			background-image: linear-gradient(to right,#dad299bd,rgba(207, 255, 217, 0.615));
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin:auto;
+			line-height: 150%;
+			}
+			/*CSS to show the users are in aboutus page*/
+			#aboutus{
+			background-color: #106a52;
+			color:white;
+			border-radius: 5px;
+			}
+			/*Top most image (Banner image of bonsai plant) url(aboutusbg1.jpg)*/
+			.banner{
+			height: 700px;
+			background-image: url(../images/background/aboutusbanner.jpg);
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position:center;
+			box-shadow: 2px 32px 41px 0px rgba(0,0,0,0.35);
+			border-bottom-right-radius: 300px;
+			}
+			/* text containers*/
+			.container1,.container2{
+			text-align: center;
+			margin-top: 100px;  
+			}
+			.container2{
+			background-color: #a48e605b;
+			padding: 15px;
+			border-radius: 25px;
+			width: fit-content;
+			margin: auto;
+			}
+			.container2 p{
+			margin:8px;
+			font-size:18px;
+			}
+			.container1{
+			padding-bottom: 250px;
+			margin-left: 5%;
+			}
+			/*to make the team members images/profileCards appear sideways*/
+			.container1 ul{
+			list-style: none;
+			display: flex;
+			}
+			/*the images will take 25% of the width making 4 profile cards adjust*/
+			.container1 li {
+			width: 25%;
+			text-align: center;
+			}
+			/*profile cards for each members*/
+			#member1,#member2,#member3,#member4 {
+			width:250px;
+			height: 300px;
+			box-shadow: 1px 1px 26px 4px rgba(0, 0, 0, 0.49);
+			border-width: 1px;
+			border-style:solid;
+			border-color: #333;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			border-radius:30px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			}
+			/*images for each members in profile card is diplayed as background image*/
+			#member1{
+			background-image: url(../images/team/raskin.jpg);
+			}
+			#member2{
+			background-image: url(../images/team/nitika.jpg);
+			}
+			#member3{
+			background-image: url(../images/team/ryan.jpg);
+			}
+			#member4{
+			background-image: url(../images/team/amit.jpg);
+			}
+			/*the learn more button which is displayed under the profile card of each member*/
+			#learn{
+			width:250px;
+			margin-top:300px;
+			border-radius: 8px;
+			padding:10px;
+			background-color: #333;
+			color:white;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			}
+			/*while hovering the learn more button*/
+			#learn:hover{
+			background-color: rgb(91, 88, 88);
+			color:rgb(255, 255, 255);
+			cursor: pointer;
+			}
+			/*overlay which opens after clicking learn more button(id=#learn)*/
+			#raskin,#nitika,#ryan,#amit {
+			cursor:default;
+			background-color: rgba(80, 91, 89, 0.723);
+			position:fixed;
+			height: 100%;
+			width: 100%;
+			top:0;
+			right: 0;
+			bottom:0;
+			left:0;
+			}
+			/*'X' button which appears at top right after opening overlay*/
+			#close{
+			font-size: 35px;
+			color: rgb(219, 219, 219);
+			margin-left:97%;
+			margin-bottom:20px;
+			width:fit-content ;
+			}
+			/*changes the cursor to pointer when hovering the close button above*/
+			#close:hover{
+			cursor: pointer;
+			}
+			/*container which holds the description of members*/
+			.profile_container{
+			width: 65%;
+			height:fit-content;
+			margin:auto;
+			background-color: white;   
+			border-radius: 100px;
+			padding:29px;
+			}
+			/*profile image of the container*/
+			.profile_container img {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			object-fit: cover;
+			object-position: center;
+			margin-bottom: 20px;
+			margin-top: 25px;
+			}
+			/*h2 tag css of the profile_container*/
+			.profile_container h2{
+			margin-bottom: 20px;
+			}
+			/*text written in the profile_container*/
+			.profile_text p {
+			margin-top:0px;
+			margin-bottom:7px;
+			}
+			.profile_text {
+			padding:20px;
+			}
+			/*the 'check out my cv' button which is displayed uder the profile_text in profile_container*/
+			.cv_button{
+			width:20%;
+			padding:25px;
+			border: none;
+			border-radius: 10px;
+			background-color: #106a52;
+			color:white;
+			}
+			/*css while hovering the 'check out my cv' button*/
+			.cv_button:hover{
+			background-color: #09d55e55;
+			color:#333;
+			cursor: pointer;
+			}
+		</style>
+	</head>
+	<!--START OF BODY OF ABOUT US PAGE-->
+	<body>
+		<!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+		<!--THE BIG BANNER IMAGE OF THE PAGE WHICH CONTAINS TEXT I.E THE NAME OF THE PAGE'ABOUT US'-->
+		<header>
+			<div class="banner">
+				<h1 style="color:rgb(255, 255, 255);text-align: left;padding-left:57px;padding-top:400px;font-size:100px;margin:0px;">
+					<!--INLINE CSS USED-->About Us
+				</h1>
+			</div>
+		</header>
+		<br>
+		<br>
+		<!--TEXT CONTAINER CONTAINING THE DESCRIPTION OF THE COMPANY-->
+		<div class="container2">
+			<p>Welcome to our company's About Us page! Here, you can learn more about who we are and what we do.</p>
+			<p>Our company was founded in 2022 with the goal of providing high-quality products and services to our customers.</p>
+			<p> Over the years, we have grown and expanded, but we have always stayed true to our roots and our commitment to excellence.</p>
+		</div>
+		<!--Horizontal line to separate two text containers-->
+		<hr style="height: 4px;margin-top: 80px;width:70%;background-image: linear-gradient(to right,rgb(182, 191, 111),#75c968,rgb(147, 222, 157),rgb(112, 190, 141));border:0px;margin-bottom: 80px;">
+		<!--TEXT CONTAINER CONTAINING THE DESCRIPTION OF THE COMPANY'S TEAM MEMBERS-->
+		<div class="container2">
+			<center>
+				<h2 style="font-size: xxx-large;">Our Team</h2>
+			</center>
+			<p>Our team is made up of talented and dedicated individuals who are passionate about what they do.</p>
+			<p>From our engineers and designers to our sales and customer service reps,</p>
+			<p>every member of our team plays a crucial role in our success.</p>
+		</div>
+		<!--Beginning of container containing all 4 profile cards-->
+		<div class="container1">
+			<!--unordered list of every members' profile card ,display flex is used to show it sideways-->
+			<ul>
+				<!--first profile card of raskin-->
+				<li>
+					<div id="member1">
+						<!--the profile images are background images of member1 id-->
+						<!--when the button is clicked javascript function 'content()' is called and 
+							also the name of the id whose content is to be showned is passed as parameter
+							in order to display the content in that id-->
+						<button onclick="content('raskin')" id="learn">Learn more</button>  <!--when the button is clicked overlay is displayed-->
+						<div id="raskin" style="display:none;">
+							<!--the diplay is set to none so that, the content within the id is hidden before clicking learn more button-->
+							<div id="close" onclick="content('raskin')">X<br></div>
+							<!--the overlay can be closed by pressing this button which calls the content() fuction when clicked-->
+							<div class="profile_container">
+								<img src="../images/team/raskin.jpg">
+								<h2>Raskin Ghimire</h2>
+								<div class="profile_text">
+									<p>My name is Raskin Ghimire and I am currently a student at Islington College studying for a degree in computer networking and IT security.</p>
+									<p>My interests include programming, hacking, and other technology-related topics. In my free time, I enjoy playing video games, chess and reading books.</p>
+									<p>Recently, I had the opportunity to work on this website development project with my fellow team members which was a great experience and I learned a lot of new things while working on it.</p>
+									<p>The project also made me aware that there is still a lot more to learn and improve in my skills.</p>
+									<a href="raskin_cv.html"><button class="cv_button">Check out my CV</button></a><!--Button which will take user to new page conataing the cv of that person-->  
+								</div>
+							</div>
+						</div>
+						<h3>Raskin Ghimire</h3>
+						<p>Title: Devloper</p>
+					</div>
+				</li>
+				<!--similar code is applied in remaning ids i.e. member2,member3,member4 to do the same task -->
+				<!--second profile card of nitika-->
+				<li>
+					<div id="member2">
+						<button onclick="content('nitika')" id="learn">Learn more</button>
+						<div id="nitika" style="display:none;">
+							<div id="close" onclick="content('nitika')">X<br></div>
+							<div class="profile_container">
+								<img src="../images/team/nitika.jpg">
+								<h2>Nitika Rai</h2>
+								<div class="profile_text">
+									<p>Hello, my name is Nitika Rai studying at Islington College where I’m pursuing my degree on computer networking & IT security.</p>
+									<p>In addition to my studies, I have developed a strong passion for writing and have started my own blog where I share my thoughts and experiences on technologies. I have always been interested in the intersection of these fields and enjoy exploring the ways in which they can work together to secure and efficient the websites.</p>
+									<p>I’m excited to continue learning & growing in web development, networks , and cybersecurity, and hope to make a meaningful impact in these field.
+									</p>
+									<a href="nitika_cv.html"><button class="cv_button">Check out my CV</button></a>
+								</div>
+							</div>
+						</div>
+						<h3>Nitika Rai</h3>
+						<p>Title: Devloper</p>
+					</div>
+				</li>
+				<!--third profile card of ryan-->
+				<li>
+					<div id="member3">
+						<button onclick="content('ryan')" id="learn">Learn more</button>
+						<div id="ryan" style="display: none;">
+							<div id="close" onclick="content('ryan')">X<br></div>
+							<div class="profile_container">
+								<img src="../images/team/ryan.jpg">
+								<h2>Ryan Chalise</h2>
+								<div class="profile_text">
+									<p>Hello, my name is Rayan chalise from Islington college and I am excited to be part of the project.</p>
+									<p>I have always been passionate about Web development and am thrilled to have the opportunity to cooperatively make such a  beautiful-looking website.</p>
+									<p>I will be able to strive to contribute to the team in a meaningful way.I am looking forward to challenging new obstetrics to achieve our goals. Thank you for having me on board.</p>
+									<a href="ryan_cv.html"><button class="cv_button">Check out my CV</button></a>
+								</div>
+							</div>
+						</div>
+						<h3>Ryan Chalise</h3>
+						<p>Title: Devloper</p>
+					</div>
+				</li>
+				<!--fourth profile card of amit-->
+				<li>
+					<div id="member4">
+						<button onclick="content('amit')" id="learn">Learn more</button>
+						<div id="amit" style="display: none;">
+							<div id="close" onclick="content('amit')">X<br></div>
+							<div class="profile_container">
+								<img src="../images/team/amit.jpg">
+								<h2>Amit Roy</h2>
+								<div class="profile_text">
+									<p>Hey there, i'm Amit Ray, currently studying at Islington College where i'm upto my degree in Networking and IT Security. I'm happy to be the part of this project, not as my passion but as the learnings in the process and it was really fun and exciting working hand-in-hand with my mates and getting this website ready.</p>
+									<p>And yeah, I'll be looking forward to work again with these kind of groups to make similar or different kind of projects. Thank you.</p>
+									<a href="amit_cv.html"><button class="cv_button">Check out my CV</button></a>
+								</div>
+							</div>
+						</div>
+						<h3>Amit Roy</h3>
+						<p>Title: Devloper</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--footer begins-->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Bonsai Paradise</h4>
+						<p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+						<br>
+						<h4>follow us</h4>
+						<!--links to social media-->
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+							<li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+							<li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+							<li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+							<li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+							<li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<ul>
+							<li><a href="#">Bonsai trees</a></li>
+							<li><a href="#">Bonsai tools & accessories</a></li>
+							<li><a href="#">Bonsai pots & trays</a></li>
+							<li><a href="#">Feeds, Fertilizers & Soil</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Informations</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Bonsai tree cares</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<!--description-->
+						<ul>
+							<li><a href="#">shop@bonsaiparadise.np</a></li>
+							<li><a href="#">98453678</a></li>
+							<br>
+							<p>Bonsai Paradise,</p>
+							<p>Kirtipur</p>
+							<p>Kathmandu</p>
+							<p>Nepal</p>
+							<br>
+							<li><a href="#">Sell us your Bonsai</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+				<br>
+				<p class="copyright">copyright 2023 - Bonsai Paradise</p>
+			</div>
+		</footer>
+		<!--footer ends-->
+		<!--JAVA SCRIPT FOR THE OVERLAY-->
+		<script>
+			/*This function content(a) accepts one parameter
+			  this function checks whether the whether the style 
+			  of the id that is passed as parameter has display: none or not
+			  if the display is none then it converts it to block
+			  and if it display is block it converts to none*/
+			function content(a){
+			  if (document.getElementById(a).style.display == 'none') {
+			    document.getElementById(a).style.display = 'block';
+			    } 
+			  else {
+			   document.getElementById(a).style.display = 'none';
+			    }
+			  }
+		</script>
+	</body>
+</html>

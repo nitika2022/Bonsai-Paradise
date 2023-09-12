@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../css/style.css"><!--linking of external css style sheet-->
+      <title>Products</title>
+   </head>
+   <!--START OF INTERNAL CSS USED IN PRODUCTS PAGE-->
+   <style>
+      /*CSS for the entire body of the Products page*/
+      body{
+         margin:0px;
+         background-image: linear-gradient(to right,#dad299bd,rgba(207, 255, 217, 0.615));
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+      }
+      /*CSS to show the users are in product page*/
+			#products{
+			background-color: #106a52;
+			color:white;
+			border-radius: 5px;
+			}
+         
+      .background{
+      background: url('../images/Product-images/wallpaperflare.com_wallpaper.jpg');
+      background-size:cover;  
+      }
+      .firstsection {
+      height: 80vh;
+      }
+      .box-main{
+      max-width: 1000px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      }
+      .bg-class{
+      display: flex;
+      }
+      .firsthalf {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 50px;
+      text-decoration-color: white;
+      }
+      .text-big {
+      font-size: 40px;
+      color: whitesmoke;
+      }
+      .text-small {
+      font-size: 20px;
+      padding-top: 30px;
+      color: white;
+      }
+
+      /* css to design the shop now button */
+      .btns {
+      Background: seagreen;
+      color: black;
+      margin: 50px 0;
+      border-radius: 30px;
+      cursor: pointer;
+      width: 300px;
+      height: 50px;
+      }
+
+      /*while hovering the button, changes its color to white*/
+      .btns:hover{
+      color: white;
+      }
+
+       /* css to design the titles like our products and new arrivals */
+      .title {
+      text-align: center;
+      margin: 0 auto 20px;
+      position: relative;
+      line-height: 50px;
+      color: darkolivegreen;
+      }
+      .title::after {
+      content: '';
+      background: yellow;
+      width: 100px;
+      height: 3px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+
+       /* css to design the products */
+      .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px;
+      }
+      .product img {
+      width: 252px;
+      height: 340px;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: -1px 3px 31px 4px rgba(73, 41, 37, 0.72);
+      }
+
+      /*while hovering the products, moves the products by y-axis by -5px*/
+      .product img:hover{
+      transform: translateY(-5px);
+      }
+      .product h3 {
+      margin: 8px 0;
+      font-size: 18px;
+      }
+      .product p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: gray;
+      }
+
+      /*showing the discount price*/
+      .discount{
+      text-decoration: line-through;
+      }
+      .product button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: rgb(220, 225, 130);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      }
+      .product button:hover {
+      background-color: darkolivegreen;
+      color: white;
+      }
+
+       /* css to design the table for the products */
+      .product-table {
+      margin-bottom: 20px;
+      margin-top: 40px;
+      padding: 21px;
+      }
+      .product {
+      width: calc(33.33% - 32px);
+      margin: auto;
+      }
+      .more {
+      display: flex;
+      Background: white;
+      color: black;
+      padding: 8px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: auto;
+      }
+      .more:hover{
+      color: greenyellow;
+      }
+      .text-bigg {
+      text-align: center;
+      margin: 0 auto 20px;
+      position: relative;
+      font-size: 30PX;
+      color: darkolivegreen;
+      }
+
+      /* css to design the offer container for the exclusive content */
+      .offer-container{
+      display: flex;
+      }
+      .half {
+      width: 50%;
+      margin: 40px;
+      }
+      .half img {
+      border-radius: 200%;
+      }
+      .remaining-half {
+      width: 50%;
+      margin: 50px;
+      }
+      .text-smalll {
+      font-size: 20px;
+      padding-top: 30px;
+      color: black;
+      }
+      /* END OF INTERNAL CSS FOR BODY OF PRODUCTS PAGE */ 
+   </style>
+   <body>
+		<!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+      <!--withing the section, adding the banner background image-->
+      <section class="background firstsection">
+         <div class="box-main">
+            <div class="firsthalf">
+                <!---adding the description on the background banner--->
+               <p class="text-big">Bonsai Paradise</p>
+               <p class="text-small">
+                  Great range of bonsai trees available for sale in Nepal, here at Bonsai paradise, we sell a range of outdoor and indoor bonsai trees including deciduous, evergreen and flowering varieties. Many of our bonsai trees are individually photographed giving you complete control over selection.
+               </p>
+               <!------adding a shop now button which will lead directly to products------->
+               <div class="button">
+                  <button class="btns">Shop now &#8594;</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <br>
+      <div class="small-container">
+         <h2 class="title">Our Products</h2>
+      </div>
+      <!-----creating table to add products in it----->
+      <div class="product-table">
+         <table>
+            <!-----adding products in the table------>
+            <tr>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/multi bonsai trees.jpg" alt="multi bonsai trees">
+                     <h3>multi bonsai trees</h3>
+                     <p class="discount">Rs.1200</p>
+                     <p>Rs.1050</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/juniper-bonsai plant.jpg" alt="juniper-bonsai plant">
+                     <h3>juniper-bonsai plant</h3>
+                     <p class="discount">Rs.1350</p>
+                     <p>Rs.1000</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Wisteria Bonsai Tree.jpg" alt="Wisteria Bonsai Tree">
+                     <h3>Wisteria Bonsai Tree</h3>
+                     <p class="discount">Rs.1100</p>
+                     <p>Rs.1000</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Pine- bonsai plant.jpg" alt="Pine- bonsai plant">
+                     <h3>Pine- bonsai plant</h3>
+                     <p class="discount">Rs.1050</p>
+                     <p>Rs.900</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Archicg Plant-Bonsai for interior.jpg" alt="Archicg Plant-Bonsai for interior">
+                     <h3>Archicg Plant-Bonsai for interior</h3>
+                     <p class="discount">Rs.1550</p>
+                     <p>Rs.1400</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/apple bonsai.jpg" alt="apple bonsai">
+                     <h3>apple bonsai</h3>
+                     <p class="discount">Rs.1300</p>
+                     <p>Rs.1100</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Ficus- bonsai plant.jpg" alt="Ficus- bonsai plant">
+                     <h3>Ficus- bonsai plant</h3>
+                     <p class="discount">Rs.1250</p>
+                     <p>Rs.1150</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Bonsai Bark.jpg" alt="Bonsai Bark">
+                     <h3>Bonsai Bark</h3>
+                     <p class="discount">Rs.1800</p>
+                     <p>Rs.1600</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Aesthetic bonsai.jpg" alt="Aesthetic bonsai">
+                     <h3>Aesthetic bonsai</h3>
+                     <p class="discount">Rs.1800</p>
+                     <p>Rs.1650</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Bonsai Trident Maple.jpg" alt="Bonsai Trident Maple">
+                     <h3>Bonsai Trident Maple</h3>
+                     <p class="discount">Rs.1500</p>
+                     <p>Rs.1430</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/leafless.jpg" alt="leafless">
+                     <h3>leafless bonsai</h3>
+                     <p class="discount">Rs.1600</p>
+                     <p>Rs.1550</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/long bonsai.jpg" alt="long bonsai">
+                     <h3>long & curly</h3>
+                     <p class="discount">Rs.1400</p>
+                     <p>Rs.1250</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!-------the more button which leads to more list of products------>
+      <div class="more">
+         <button class="more">more &#8594;</button>
+      </div>
+      <br>
+      <!------adding small container to show the new arrival products------>
+      <div class="small-container">
+         <h2 class="title">New Arivals</h2>
+      </div>
+      <div>
+         <table>
+            <tr>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/artistic bonsai.jpg" alt="artistic bonsai">
+                     <h3>artistic bonsai</h3>
+                     <p class="discount">Rs.2200</p>
+                     <p>Rs.2000</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/artistic. bonsai.jpg" alt="artistic bonsai">
+                     <h3>artistic bonsai</h3>
+                     <p class="discount">Rs.1950</p>
+                     <p>Rs.1900</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+               <td>
+                  <div class="product" onclick="window.location.href='1-product.html';">
+                     <img src="../images/Product-images/Megumi Red maple Iow res.jpg" alt="Megumi Red maple">
+                     <h3>Megumi Red maple</h3>
+                     <p class="discount">Rs.2000</p>
+                     <p>Rs.1950</p>
+                     <button>Add to Cart</button>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <hr>
+      <br>
+      <!------creating a title exclusive offer and a container below------->
+      <div>
+         <h4 class="text-bigg">Exclusive offer:</h4>
+      </div>
+      <div class="offer-container">
+         <div class="half">
+            <img src="../images/Product-images/Bag End Bonsai landscape by Adam.jpg" alt="Bag End Bonsai landscape by Adam">
+         </div>
+         <div class="remaining-half">
+            <p class="text-smalll">
+               The wonderful Lord of the Rings movies were 
+               more than enough inspiration for Adam
+               to recreate the Bag End landscape in  
+               miniature, with a stunning Bonsai as result.
+            </p>
+            <br><br>
+            <pre>Rs.2600</pre>
+            <br><br><br><br><br><br><br>
+            <div class="button">
+               <button class="btns">see details &#8594;</button>
+            </div>
+         </div>
+      </div>
+      <!---creating footer container---->
+      <footer class="footer">
+         <div class="footer-container">
+            <div class="footer-row">
+               <div class="footer-col">
+                <!-----a sort of footer description------>
+                  <h4>Bonsai Paradise</h4>
+                  <p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+                  <br>
+                  <!------a follow us column to allow client to directly lead to social media links to follow us for updates----->
+                  <h4>follow us</h4>
+                  <ul class="social-links">
+                     <li><a href="https://www.facebook.com"><img src="../images/Product-images/f.webp"></a></li>
+                     <li><a href="https://www.instagram.com"> <img src="../images/Product-images/i.webp"></a></li>
+                     <li><a href="https://www.linkedin.com"><img src="../images/Product-images/l.png"></a></li>
+                     <li><a href="https://www.pinterest.com/#top"><img src="../images/Product-images/p.png"></a></li>
+                     <li><a href="https://www.twitter.com"><img src="../images/Product-images/t.png"></a></li>
+                     <li><a href="https://www.youtube.com"><img src="../images/Product-images/y.webp"></a></li>
+                  </ul>
+               </div>
+               <!-----a shop column to allow clients to select directly what they want----->
+               <div class="footer-col">
+                  <h4>Shop</h4>
+                  <ul>
+                     <li><a href="#">Bonsai trees</a></li>
+                     <li><a href="#">Bonsai tools & accessories</a></li>
+                     <li><a href="#">Bonsai pots & trays</a></li>
+                     <li><a href="#">Feeds, Fertilizers & Soil</a></li>
+                  </ul>
+               </div>
+               <!-----an information column to allow clients to know more about us----->
+               <div class="footer-col">
+                  <h4>Informations</h4>
+                  <ul>
+                     <li><a href="#">My Account</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Bonsai tree cares</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+               </div>
+               <!-----a contact us column to allow clients to directly reach us for any of their query----->
+               <div class="footer-col">
+                  <h4>Contact Us</h4>
+                  <ul>
+                     <li><a href="#">shop@bonsaiparadise.np</a></li>
+                     <li><a href="#">98453678</a></li>
+                     <br>
+                     <p>Bonsai Paradise,</p>
+                     <p>Kirtipur</p>
+                     <p>Kathmandu</p>
+                     <p>Nepal</p>
+                     <br>
+                     <li><a href="#">Sell us your Bonsai</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div>
+            <hr>
+            <br>
+            <!------a copyright section---->
+            <p class="copyright">copyright 2023 - Bonsai Paradise</p>
+         </div>
+      </footer>
+   </body>
+</html>

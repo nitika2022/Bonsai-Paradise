@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bonsai Paradise | Nitika Rai CV</title>
+    <meta name="description" content="CV of Nitika Rai page of Bonsai Paradise.">
+    <meta name="keywords" content="CV,portfolio,Nitika Rai,bonsai,products,developer,skill,details,eduction,projects">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--START OF INTERNAL CSS USED IN CV OF NITIKA RAI-->
+    <style>
+        /*Font for the text*/
+        
+        @font-face {
+            font-family: 'Indie Flower';
+            src: url('../fonts/IndieFlower-Regular.ttf');
+        }
+        /*CSS for the entire body of this page*/
+        
+        body {
+            background-image: url('../images/nitikacv_images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Indie Flower', cursive;
+            font-weight: normal;
+            font-size: 14px;
+            margin: 0px;
+        }
+        /*CSS of the header where name and image is displayed*/
+        
+        .header {
+            height: 300px;
+            background-color: #ffffff56;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            border-radius: 25px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        /*CSS for the h1 tag in the header class*/
+        
+        .header h1,
+        p {
+            margin: 0;
+        }
+        /*CSS for the profile image in the header*/
+        
+        .header img {
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+        /*text containers*/
+        
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        /*container on the left side of the page*/
+        
+        .left_container {
+            float: left;
+            flex: 35%;
+            background-color: #ffffff56;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            padding: 25px;
+            margin-left: 5px;
+            border-radius: 25px;
+            height: 100%;
+        }
+        /*specifies the styles for an unordered list (ul) element that is a direct child of an element with the class left_container*/
+        
+        .left_container>ul {
+            padding: 0 15px;
+        }
+        /*container on the right side of the page*/
+        
+        .right_container {
+            float: right;
+            flex: 65%;
+            flex-direction: column;
+            margin-left: 200px;
+            margin-right: 5px;
+        }
+        /*specifies the styles for div elements that are direct children of an element with the class right_container*/
+        
+        .right_container>div {
+            background-color: #ffffff56;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            padding: 25px;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+        /*specifies the styles for div1 elements that are direct children of an element with the class right_container*/
+        
+        .right_container>.div1 {
+            margin-top: 0;
+            text-align: justify;
+        }
+        /*specifies the styles for an ordered list (ol) element that is a direct child of a div element that is in turn a direct child of an element with the class right_container*/
+        
+        .right_container>div ol {
+            margin-top: 0;
+        }
+        /*CSS for the table that is in the education container*/
+        
+        table {
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            border-collapse: collapse;
+            border-radius: 1em;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        table th {
+            background-color: #93cfd4;
+            padding: 5px;
+            font-size: 15px;
+        }
+        
+        table td {
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: normal;
+            background-color: azure;
+        }
+    </style>
+</head>
+<!--Body begins here-->
+
+<body>
+    <!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar" style="font-family:Arial, Helvetica, sans-serif;">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+    <!--IMAGE AND NAME FOR THE CV IN THE HEADER-->
+    <div class="header">
+        <img src="../images/nitikacv_images/profile.jpg">
+        <h1 style="font-size: 40px;text-align: center; font-family:Brush Script MT;">Nitika Rai</h1>
+        <p style="font-size: 18px;">Networking & IT Security Undergraduate</p>
+    </div>
+    <!--end of header-->
+    <!--container which contains about details of Nitika Rai-->
+    <div class="container">
+        <!--dividing container into right and left-->
+        <div class="left_container">
+            <h2>Details</h2>
+            <p>E-mail: rnitika78@gmail.com</p>
+            <p>Phone: +977 9823781806</p>
+            <p>Address: Suryabinayak-4, Bhaktapur</p>
+            <hr width="240px" align="left" style="margin-top: 15px;">
+            <br>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Cyber Security</li>
+                <li>Networking</li>
+                <li>Programming</li>
+                <li>Database</li>
+                <li>Web Development</li>
+                <li>Linux</li>
+            </ul>
+            <hr width="240px" align="left">
+            <br>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+                <li>Project Management</li>
+                <li>Goal Oriented</li>
+            </ul>
+            <hr width="240px" align="left">
+            <br>
+            <h2>Languages Spoken</h2>
+            <p>English, Nepali, Hindi</p>
+        </div>
+        <div class="right_container">
+            <div class="div1">
+                <h1>About Me</h1>
+                <p>An undergraduate student, pursuing a degree in IT with a passion for problem-solving and a strong interest in the latest technologies. More dedicated to learning and growing as an IT professional.</p>
+            </div>
+            <div>
+                <!--eductaion container which displays information in a table-->
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>Institute</th>
+                        <th>Course</th>
+                        <th>Affiliation</th>
+                    </tr>
+                    <tr>
+                        <td>Islington College <br> (2022 - Present)</td>
+                        <td>Bsc. (Hons) Computer Networking & IT Security</td>
+                        <td>London Metropolitan University</td>
+                    </tr>
+                    <tr>
+                        <td>Nobel Academy Secondary School <br> (2018 - 2020)</td>
+                        <td>+2 in Science (Biology)</td>
+                        <td>National Examinations Board</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="height: 225px;">
+                <h2>Academic Projects</h2>
+                <ol style="padding-left: 15px;">
+                    <li><b>Front-End Web Development with HTML, CSS, Javascript</b></li>
+                    <p>(Jan 2023)</p>
+                    <p>Worked as a team leader for the academic project where we built a Website.</p>
+                    <br>
+                    <li><b>OOP Development with Java</b></li>
+                    <p>(Jan 2023)</p>
+                    <p>Acquired fundamental understanding of OOP and worked on how to use oop features of java such as class, object, encapsulation, and inheritance.</p>
+                </ol>
+            </div>
+        </div>
+    </div>
+        <!--footer begins-->
+		<footer class="footer" style="font-family: Arial, Helvetica, sans-serif;">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Bonsai Paradise</h4>
+						<p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+						<br>
+						<h4>follow us</h4>
+						<!--links to social media-->
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+							<li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+							<li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+							<li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+							<li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+							<li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<ul>
+							<li><a href="#">Bonsai trees</a></li>
+							<li><a href="#">Bonsai tools & accessories</a></li>
+							<li><a href="#">Bonsai pots & trays</a></li>
+							<li><a href="#">Feeds, Fertilizers & Soil</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Informations</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Bonsai tree cares</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<!--description-->
+						<ul>
+							<li><a href="#">shop@bonsaiparadise.np</a></li>
+							<li><a href="#">98453678</a></li>
+							<br>
+							<p>Bonsai Paradise,</p>
+							<p>Kirtipur</p>
+							<p>Kathmandu</p>
+							<p>Nepal</p>
+							<br>
+							<li><a href="#">Sell us your Bonsai</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+				<br>
+				<p class="copyright">copyright 2023 - Bonsai Paradise</p>
+			</div>
+		</footer>
+</body>
+
+</html>

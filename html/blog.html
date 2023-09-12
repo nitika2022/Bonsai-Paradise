@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bonsai Paradise | Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--linking external css style sheet-->
+    <meta name="description" content="Blog page for Bonsai Paradise.">
+    <meta name="keywords" content="Blog,Recently published,How technology has affected daily life and business, Bonsai plants">
+    <title>Blog</title>
+    <!--START OF INTERNAL CSS USED IN ABOUT US PAGE-->
+    <style type="text/css">
+        /*CSS for fonts*/
+        
+        @font-face {
+            font-family: 'Indie Flower';
+            src: url('../fonts/IndieFlower-Regular.ttf');
+        }
+        
+        * {
+            margin: 0px;
+        }
+        /*CSS for the entire body of the blog page*/
+        
+        body {
+            background-image: linear-gradient(to right, #dad299bd, rgba(207, 255, 217, 0.615));
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Indie Flower', cursive;
+            font-size: 18px;
+            color: #231702;
+        }
+        /*CSS to show the users are in blog page*/
+			#blog{
+			background-color: #106a52;
+			color:white;
+			border-radius: 5px;
+			}
+        /*CSS for the slider in the top of blog page*/
+        
+        .slider {
+            width: 100%;
+            height: 250px;
+            margin: 0px auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: absolute;
+            z-index: -2;
+        }
+        /*CSS for the image of slider*/
+        
+        .slider img {
+            width: 100%;
+            height: 100%;
+        }
+        /*CSS for the text inside the slider*/
+        
+        .header {
+            padding: 10px;
+            font-size: 35px;
+            text-align: center;
+            margin-top: 70px;
+            border-radius: 25px;
+        }
+        /* text container*/
+        
+        .container {
+            display: flex;
+            margin: 10px;
+            background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.433), rgba(228, 220, 162, 0.46)),url('../images/blog_images/container1.png');
+            border-radius: 25px;
+            padding: 5px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        /*CSS for the image inside the container*/
+        
+        .img {
+            margin: 15px;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        /*selecting all "img" elements that are a descendant of an element with a class of "img"*/
+        
+        .img img {
+            height: 250px;
+            width: 250px;
+            border-radius: 25px;
+            margin: 5px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        /*for hover of img*/
+        
+        .img img:hover {
+            transform: scale(1.1);
+        }
+        /*css for text inside the container*/
+        
+        .text {
+            flex: 75%;
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        /*css for the button thats inside the container which brings more content*/
+        
+        .text button {
+            border-style: solid;
+            padding: 10px;
+            width: 120px;
+            background-color: #e3ccae;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!--START OF BODY OF BLOG PAGE-->
+
+<body>
+    <!--NAVIGATION BAR BEGINS-->
+		<nav>
+			<div class="navbar" style="font-family:Arial, Helvetica, sans-serif;">
+				<!--LOGO OF THE COMPANY; WHEN CLICKED REDIRECTS TO HOME PAGE-->
+				<a href="home.html"><img src="../images/icon/bonsaiparadise.png" height="80px"></a>
+				<!--OPTIONS IN THE NAVIGATION BAR; WHEN CLICKED REDIRECTS TO THE INTENDED PAGE-->
+				<div class="navtext">
+					<a href="home.html" id="home">Home</a>
+					<a href="blog.html" id="blog">Blog</a>
+					<a href="aboutus.html" id="aboutus">About Us</a>
+					<a href="product.html" id="products">Products</a>
+					<a href="research.html" id="research">Research</a>
+					<a href="contactus.html" id="contactus">Contact Us</a>
+				</div>
+				<div class="formsearch">
+					<form name="search">
+						<input type="search" placeholder="Search"><input type="button" value="." style="padding:15px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-width: 1px;background-image: url(../images/icon/search.png);background-size: contain;background-repeat: no-repeat;background-position: center;cursor:pointer;">
+					</form>
+					<a>
+						<img src="../images/icon/cart.png" height="30px" style="margin-left: 25px;">
+						<div id="cart_counter" style="margin-left: 25px;background-color: rgb(87, 183, 102);color: white;">0</div>
+					</a>
+					<a>
+						<img src="../images/icon/user.png" height="30px" width="30px" style="margin-top: 0px;margin-left: 25px;">
+						<div style="margin-left: 25px;">login/signup</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--NAVIGATION BAR ENDS-->
+    <!--THE SLIDER IMAGE OF THE PAGE WHICH CONTAINS TEXT I.E THE NAME OF THE PAGE'BLOG by Nitika Rai'-->
+    <header>
+        <div class="slider">
+            <div id="img">
+                <img src="../images/blog_images/slider.png">
+            </div>
+        </div>
+        <div class="Blog">
+            <!--INLINE CSS USED-->
+            <p style="font-size: 100px;text-align: center; font-family:cursive;">Blog</p>
+            <p style="font-size: 40px;text-align: center; font-family:Brush Script MT;"> by Nitika Rai</p>
+        </div>
+    </header>
+    <div class="header">
+        <p style="font-size: 50px;text-align: center; font-family:cursive;">
+            Recently Published
+        </p>
+    </div>
+    <!--TEXT CONTAINER CONTAINING THE FIRST BLOG-->
+    <div class="container">
+        <!--IMAGE INSIDE THE FIRST CONTAINER-->
+        <div class="img" style="padding-top: 10px;">
+            <img src="../images/blog_images/technology.jpg ">
+        </div>
+        <!--TEXT INSIDE CONTAINER CONTAINING THE TEXT FOR BLOG-->
+        <div class="text">
+            <h2>How technology has affected daily life and business</h2>
+            <h5>Jan 12, 2023 -by Nitika Rai</h5>
+            <br>
+            <p>Technology has had a significant impact on daily life and business in the 21st century. In terms of daily life, technology has greatly impacted the way people communicate, access information, and go about their daily tasks.</p>
+            <br>
+            <p>In terms of business, technology has had a significant impact on how companies operate and compete. The Internet and other digital technologies have made it easier for businesses to reach and sell to customers all over the world. This has
+                led to the creation of many new business models, such as e-commerce and online marketplaces, which would not have been possible without the Internet.
+            </p>
+            <p> Technology has also had a major impact on how businesses communicate with their employees and customers, as well as how they track and analyze data. Overall, technology has had a profound impact on both daily life and business in the 21st
+                century and will continue to do so in the future.
+            </p>
+            <div id="text1" style="display:none;">
+                <p> <b> Ways Technology Impacts Our Lives:<br></b> Communication
+                    <br> Transportation
+                    <br> Shopping
+                    <br> Work
+                    <br> Education
+                    <br> Healthcare
+                    <br> Entertainment
+                    <br> Banking and finance<br> Agriculture
+                    <br> Manufacturing
+                    <br>
+                </p>
+                <p>
+                    Technology has both positive and negative impacts on daily life and business. Some of the negative impacts include:
+
+                    Addiction: Overuse of technology can lead to addiction and negatively impact people's physical and mental health.
+
+                    Job Loss: Automation and artificial intelligence have replaced many jobs, leading to unemployment and wage stagnation.
+
+                    Social Isolation: Technology has decreased face-to-face communication, leading to social isolation and decreased emotional intelligence.
+
+                    Cybersecurity Risks: Technology has increased the risk of cyber attacks, data breaches, and identity theft, affecting individuals and businesses.
+
+                    Health Issues: Prolonged use of technology can lead to physical problems such as eye strain, back pain, and repetitive stress injuries.
+                    Positive impact of technology on daily life and business is quite extensive. Some of the key benefits are:
+
+                    Increased Efficiency: Technology has made many tasks and processes more efficient, reducing the time and cost required to complete them. For example, automation of repetitive tasks has allowed businesses to focus on more important tasks.
+
+                    Convenience: Technology has made many aspects of daily life more convenient. For example, online shopping, banking, and access to information have made it easier for people to access the products and services they need.
+
+                    Improved Communication: Technology has greatly improved communication, making it easier for people to connect with others globally. Social media, email, and instant messaging have made it easier to stay in touch with friends and family, and videoconferencing has made remote work and collaboration possible.
+
+                    Access to Information: Technology has greatly increased access to information. The internet provides a wealth of information on almost any subject, making it easier to learn and stay informed.
+
+                    Job Opportunities: Technology has created new job opportunities, such as software development and data analysis. The increased use of technology has also increased demand for IT professionals, digital marketers, and other technology-related roles.
+                </p>
+                <ol>
+                    <li>
+                        <p><b> Communication<br></b> Technology has greatly improved communication, making it easier and faster to connect with people around the world.<br> This has been especially important during the COVID-19 pandemic, as people have relied
+                            on video conferencing tools to stay connected with colleagues, friends, and family.
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>Transportation<br></b> Technology has also revolutionized transportation. From ride-sharing apps to electric and autonomous vehicles, technology is changing the way we move around.<br>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b> Shopping<br></b> Technology has transformed the way we shop, with the rise of e-commerce sites and mobile apps making it easier to purchase goods online. This has disrupted traditional brick-and-mortar retailers, who have had
+                            to adapt to the shift towards online shopping.<br>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>Work<br></b> Technology has changed the way we work, with many people now able to do their jobs remotely thanks to the internet and advances in communication tools. This has led to the rise of the gig economy, where people work
+                            on a project-by-project basis rather than being tied to a traditional 9-to-5 job.<br>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>Education<br></b> Technology has also had a major impact on education, with the widespread adoption of online learning platforms and tools for remote teaching. This has made it easier for people to access educational resources
+                            from anywhere, at any time.
+                        </p>
+                    </li>
+                    <li>
+                        <p><b> Healthcare<br></b> Technology has had a major impact on healthcare, with the development of electronic health records, telemedicine platforms, and wearable devices that can track and monitor various aspects of a person's health.
+                            These innovations have made it easier for healthcare providers to deliver care, and for patients to access medical services remotely.
+                        </p>
+                    </li>
+                    <li>
+                        <p><b> Entertainment<br></b> Technology has changed the way we consume entertainment, with streaming services and social media platforms providing endless options for movies, TV shows, music, and other forms of entertainment.</p>
+                    </li>
+                    <li>
+                        <p><b>Banking and finance</b><br> Technology has revolutionized the way we manage our money, with the rise of mobile banking apps, digital payment platforms, and online investment tools. This has made it easier for people to manage
+                            their financial affairs, and has disrupted traditional financial institutions.
+                        </p>
+                        <li>
+                            <p><b> Agriculture</b><br> Technology is also changing the way we produce and distribute food, with the use of precision agriculture techniques, such as GPS-guided machinery and sensors that monitor crop health. This has made
+                                it possible for farmers to increase productivity and efficiency, while also reducing the environmental impact of agriculture.
+                            </p>
+                        </li>
+                        <li>
+                            <p><b> Manufacturing</b><br> Technology has transformed the manufacturing industry, with the adoption of automation and robotics making it possible to produce goods faster and more efficiently. This has led to changes in the way
+                                we work, with many jobs being automated and the need for skilled technicians and engineers increasing.
+                            </p>
+                        </li>
+                        <p><b>Overall, technology has made many aspects of daily life and business more convenient, efficient, and connected.
+                  <br></b>
+                        </p>
+                    </li>
+            </div>
+            <!--when the button is clicked javascript function 'content1()' is called and 
+               also the name of the id whose content is to be showned is passed as parameter
+               in order to display the content in that id-->
+            <button onclick="content1('text1')" id="readmore1">Read more...</button>
+        </div>
+    </div>
+    <!--TEXT CONTAINER CONTAINING THE SECOND BLOG-->
+    <div class="container">
+        <div class="img" style="padding-top: 20px;">
+            <img src="../images/blog_images/bonsai.jpg">
+        </div>
+        <!--TEXT INSIDE CONTAINER CONTAINING THE TEXT FOR BLOG-->
+        <div class="text">
+            <h2>Bonsai plants</h2>
+            <h5>Jan 23, 2023 -Nitika Rai</h5>
+            <br>
+            <p> Bonsai plants are small trees or woody plants that are grown and cultivated in containers, usually pots. The goal of bonsai cultivation is Bonsai plants are typically trained.</p>
+            <br>
+            <p>There are many different types of plants that can be used for bonsai, including trees, shrubs, and even certain types of vines. Common bonsai plants include pine, juniper, maple, and elm, but many other plant species can be used as well. Some
+                popular bonsai plant species include:
+            </p>
+            <br>
+            <li><b>Ficus:</b> A popular choice for bonsai due to its versatility and ability to thrive in a variety of conditions.</li>
+            <li><b>Chinese Elm:</b> A popular species for bonsai due to its small, delicate leaves and attractive bark.</li>
+            <li><b>Japanese Maple:</b> Known for its beautiful fall foliage, the Japanese maple is a popular choice for bonsai.</li>
+            <div id="text2" style="display:none;">
+                <li><b>Juniper:</b> A hardy plant that is well-suited to bonsai cultivation.</li>
+                <li><b>Azalea:</b> A flowering plant that adds a touch of color to a bonsai collection.</li>
+                <br>
+                <p>Bonsai plants can be grown indoors or outdoors, depending on the species and the climate in which they are grown. It is important to research the specific needs of a bonsai plant before attempting to grow it, as each species has its own
+                    unique requirements for light, water, and temperature. Proper care and attention is essential for the health and longevity of bonsai plants.
+                </p>
+                <p>Caring for a bonsai plant involves regular watering, fertilizing, and pruning to maintain its shape and size. Bonsai plants also require proper lighting, as they need a balance of sunlight and shade to thrive. Some bonsai plants may need
+                    to be protected from extreme weather conditions, such as frost or strong winds.
+                </p>
+                <p>Bonsai plants can be enjoyed by people of all ages and can be a rewarding hobby for those who enjoy gardening and the art of creating and shaping small trees. There are many resources available for those interested in learning more about
+                    bonsai cultivation, including books, online forums, and local bonsai clubs.
+                </p>
+                <p>There are many techniques and practices that are used in bonsai cultivation to create and maintain the desired shape and form of a bonsai plant. Some of the most common techniques include:</p>
+                <li><b>Pruning:</b> Regular pruning is essential for shaping and maintaining the size of a bonsai plant. This can be done through techniques such as pinching and cutting back branches to encourage new growth and maintain the desired shape.</li>
+                <br>
+                <li><b>Wiring:</b> Bonsai plants can be shaped and trained through the use of wire, which is wrapped around branches and stems to guide them into the desired position. The wire is typically left in place for several months before being removed.</li>
+                <br>
+                <li><b>Repotting:</b> Bonsai plants should be repotted every few years, depending on the species and the size of the pot. Repotting involves removing the plant from its pot, trimming the roots, and replanting it in a new pot with fresh soil.</li>
+                <br>
+                <li><b>Fertilizing</b> Bonsai plants require regular fertilization to provide the nutrients they need to grow and thrive. This can be done through the use of liquid fertilizers or slow-release fertilizers applied to the soil.</li>
+                <br>
+                <li><b>Pest control:</b> Bonsai plants can be vulnerable to pests such as aphids and scale insects. These pests can be controlled through the use of natural or chemical pesticides, or by physically removing them from the plant.</li>
+                <br>
+                <p>It is important to research the specific care requirements of a bonsai plant before attempting to grow it, as each species has its own unique needs. Proper care and attention is essential for the health and longevity of bonsai plants.</p>
+            </div>
+            <!--when the button is clicked javascript function 'content2()' is called and 
+               also the name of the id whose content is to be showned is passed as parameter
+               in order to display the content in that id-->
+            <button onclick="content2('text2')" id="readmore2">Read more...</button>
+        </div>
+    </div>
+    <!--TEXT CONTAINER CONTAINING THE THIRD BLOG-->
+    <div class="container">
+        <div class="img" style="padding-top: 20px;">
+            <img src="../images/blog_images/lily.png">
+        </div>
+        <!--TEXT INSIDE CONTAINER CONTAINING THE TEXT FOR BLOG-->
+        <div class="text">
+            <h2>Lilies: A Stunning and Versatile Bloom</h2>
+            <h5>Jan 25, 2023 -by Nitika Rai</h5>
+            <br>
+            <p> Lilies are one of the most popular and recognizable flowers in the world, and for good reason. These stunning blooms come in a wide range of colors, sizes, and shapes, and their versatility makes them a popular choice for gardens, arrangements,
+                and special occasions.</p>
+            <br>
+            <p>Types of Lilies</p>
+            <br>
+            <p>There are many different types of lilies, including Asiatic lilies, Oriental lilies, trumpet lilies, and more. Each type of lily has its own unique features, from the shape and size of the flower to the fragrance and color. Asiatic lilies
+                are known for their brightly colored flowers and early blooming season, while Oriental lilies are prized for their large, fragrant blooms. Trumpet lilies have a distinctive shape that sets them apart from other lily varieties.</p>
+            <br>
+            <div id="text3" style="display:none;">
+                <p>Caring for Lilies</p>
+                <br>
+                <p>Lilies are relatively easy to care for and can thrive in a variety of growing conditions. They prefer well-drained soil and plenty of sunlight, and they should be watered regularly to keep the soil moist. Fertilizing lilies every four
+                    to six weeks can also help to promote healthy growth and encourage more blooms.</p>
+                <br>
+                <p>Using Lilies in Gardens and Arrangements</p>
+                <br>
+                <p>Lilies are a versatile flower that can be used in many different ways. In the garden, they can be planted as border plants, in beds, or in pots, and they can also be used to create stunning cut flower arrangements. Whether you prefer simple
+                    bouquets or elaborate centerpieces, lilies are a beautiful and fragrant addition to any setting.</p>
+                <br>
+                <p>Symbolism and Significance</p>
+                <br>
+                <p>Lilies have been used for centuries to symbolize purity, innocence, and rebirth. They are often associated with the Madonna, and they are a popular choice for Easter and Mother's Day celebrations. In many cultures, lilies are also associated
+                    with funerals and are used to express condolences.</p>
+                <br>
+                <p>In conclusion, lilies are a truly stunning and versatile flower that can be used in a variety of ways. From the garden to the vase, lilies are sure to add beauty and fragrance to any setting.</p>
+                <br>
+            </div>
+            <!--when the button is clicked javascript function 'content3()' is called and 
+               also the name of the id whose content is to be showned is passed as parameter
+               in order to display the content in that id-->
+            <button onclick="content3('text3')" id="readmore3">Read more...</button>
+        </div>
+    </div>
+    <!--footer begins-->
+		<footer class="footer" style="font-family: Arial, Helvetica, sans-serif;">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Bonsai Paradise</h4>
+						<p>Bonsai Paradise is bonsai tree,tools and accessories shop based in Kirtipur, Kathmandu, selling a range of high-quality bonsai trees,bonsai tree gift sets and high-quality accessories, pots and tools.</p>
+						<br>
+						<h4>follow us</h4>
+						<!--links to social media-->
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com"><img src="../images/icon/facebook.png"></a></li>
+							<li><a href="https://www.instagram.com"> <img src="../images/icon/instagram.png"></a></li>
+							<li><a href="https://www.linkedin.com"><img src="../images/icon/linkedin.png"></a></li>
+							<li><a href="https://www.pinterest.com/#top"><img src="../images/icon/pinterest.png"></a></li>
+							<li><a href="https://www.twitter.com"><img src="../images/icon/twitter.png"></a></li>
+							<li><a href="https://www.youtube.com"><img src="../images/icon/youtube.png"></a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Shop</h4>
+						<ul>
+							<li><a href="#">Bonsai trees</a></li>
+							<li><a href="#">Bonsai tools & accessories</a></li>
+							<li><a href="#">Bonsai pots & trays</a></li>
+							<li><a href="#">Feeds, Fertilizers & Soil</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Informations</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Bonsai tree cares</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<!--description-->
+						<ul>
+							<li><a href="#">shop@bonsaiparadise.np</a></li>
+							<li><a href="#">98453678</a></li>
+							<br>
+							<p>Bonsai Paradise,</p>
+							<p>Kirtipur</p>
+							<p>Kathmandu</p>
+							<p>Nepal</p>
+							<br>
+							<li><a href="#">Sell us your Bonsai</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr>
+				<br>
+				<p class="copyright">copyright 2023 - Bonsai Paradise</p>
+			</div>
+		</footer>
+</body>
+<!--JAVA SCRIPT FOR THE SLIDER AND CONTENT-->
+<script>
+    /*This function slider()  changes the image in each interval of time 2 sec with one image at a time to next image*/
+    var images = ['../images/blog_images/slider1.png','../images/blog_images/slider3.png','../images/blog_images/slider4.png'];
+
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(slider, 2000);
+
+    function slider() {
+        if (x < images.length) {
+            x = x + 1;
+        } else {
+            x = 1;
+        }
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+    /*This function content(a) accepts one parameter
+                                 this function checks whether the whether the style 
+                                 of the id that is passed as parameter has display: none or not
+                                 if the display is none then it converts it to block
+                                 and if it display is block it converts to none i.e changes read more to read less and vice versa along the text*/
+    function content1(a) {
+
+        if (document.getElementById(a).style.display == 'none') {
+            document.getElementById(a).style.display = 'block';
+            read = document.getElementById('readmore1');
+            read.innerHTML = "Read less";
+
+        } else {
+
+            document.getElementById(a).style.display = 'none';
+            read = document.getElementById('readmore1');
+            read.innerHTML = "Read more...";
+
+        }
+    }
+
+    function content2(a) {
+
+        if (document.getElementById(a).style.display == 'none') {
+            document.getElementById(a).style.display = 'block';
+            read = document.getElementById('readmore2');
+            read.innerHTML = "Read less";
+
+        } else {
+
+            document.getElementById(a).style.display = 'none';
+            read = document.getElementById('readmore2');
+            read.innerHTML = "Read more...";
+
+        }
+    }
+
+    function content3(a) {
+
+        if (document.getElementById(a).style.display == 'none') {
+            document.getElementById(a).style.display = 'block';
+            read = document.getElementById('readmore3');
+            read.innerHTML = "Read less";
+
+        } else {
+
+            document.getElementById(a).style.display = 'none';
+            read = document.getElementById('readmore3');
+            read.innerHTML = "Read more...";
+
+        }
+    }
+</script>
+
+</html>
